@@ -1,0 +1,236 @@
+/* Force content viewport size for mobile devices */
+body {
+    min-height: 2000px;
+}
+
+/* Fix for horizontal scrollbar on mobile devices */
+/*.container {
+    padding: 0 15px;
+}*/
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.loading, .loading-sm, .loading-xs {
+    background: url('../images/candidate-spinner.gif') no-repeat center;
+}
+
+.loading-xs {
+    background-size: 100px auto;
+}
+
+.loading-sm {
+    background-size: 200px auto;
+}
+
+.loading-md {
+    background-size: 500px auto;
+}
+
+.dashboard-exported {
+    text-align: center;
+}
+
+.dashboard-tile {
+    text-align: center;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.dashboard-tile-orange {
+    background-color: #F38630;
+}
+
+.dashboard-tile-red {
+    background-color: #F7464A;
+}
+
+.dashboard-tile-blue {
+    background-color: #40E0D0;
+}
+
+.dashboard-tile .detail {
+    font-size: 113px;
+}
+
+.dashboard-tile .info {
+    text-transform: uppercase;
+}
+
+th[sortable="true"],span.dropdown-heading {
+    cursor: pointer;
+}
+
+td.expand, td.selectable {
+    cursor: pointer;
+}
+
+table#transactions th span {
+    display: inline-block;
+}
+
+.select-filters-dropdown {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+table.dd-table-detail {
+    border: 1px dashed #ddd;
+}
+
+.table.dd-table-detail td {
+    border-top: none;
+}
+
+span.caret-right {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #000000;
+    display: inline-block;
+    height: 0;
+    opacity: 0.5;
+    width: 0;
+}
+
+span.caret-down {
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    display: inline-block;
+    height: 0;
+    opacity: 0.5;
+    width: 0;
+}
+
+.greyed {
+    opacity: 0.25;
+}
+
+.label-paymentRCUR,
+.badge-paymentRCUR {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+.label-paymentRCUR[href],
+.badge-paymentRCUR[href] {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+.label-paymentOOFF,
+.badge-paymentOOFF {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+.label-paymentOOFF[href],
+.badge-paymentOOFF[href] {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+
+.label-paymentFRST, .badge-paymentFRST {
+    background-color: #FFB400;
+    color: #999999;
+    font-weight: normal;
+}
+
+.label-paymentFRST[href],
+.badge-paymentFRST[href] {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+.label-paymentFNAL,
+.badge-paymentFNAL {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+.label-paymentFNAL[href],
+.badge-paymentFNAL[href] {
+    background-color: #F5DE7F;
+    color: #999999;
+    font-weight: normal;
+}
+
+#export-controls, #pagination-controls {
+    margin-bottom: 20px;
+}
+
+button.filter-button {
+    margin-top: 5px;
+}
+
+button.iban-button {
+    margin-right: 5px;
+}
+
+.dd-form-search span.input-group-addon {
+    cursor: pointer;
+}
+
+.dd-form-search span.input-group-addon:hover {
+    opacity: 0.75;
+}
+
+.dd-form-search span.input-group-addon:first-child {
+    -webkit-border-radius: 14px 0 0 14px;
+    -moz-border-radius: 14px 0 0 14px;
+    border-radius: 14px 0 0 14px;
+}
+
+.dd-form-search span.input-group-addon:last-child {
+    -webkit-border-radius: 0 14px 14px 0;
+    -moz-border-radius: 0 14px 14px 0;
+    border-radius: 0 14px 14px 0;
+}
+
+.slider-container {
+    width: 100%;
+}
+
+label.label-radio {
+    font-weight: normal !important;
+}
+
+p.bg-classes {
+    padding: 15px;
+}
+
+.create-callback-alert {
+    position:fixed;
+    bottom:25%;
+    right:0;
+    margin-bottom:0;
+    font-size:1.2em;
+    padding:1em 1.3em;
+    z-index:2000;
+}
+
+/*
+ * Override bootstrap-datepicker z-index to be greater
+ * than bootstrap.modal z-index (1050) if in a modal
+ */
+/*.datepicker {z-index: 1151 !important;}*/
+
+/*
+ * Override bootstrap-popover z-index to be greater
+ * than bootstrap.modal z-index (1050)
+ */
+.popover {z-index: 1151 !important;}

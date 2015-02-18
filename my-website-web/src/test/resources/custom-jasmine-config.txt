@@ -1,0 +1,33 @@
+paths: {
+    'text': 'lib/text',
+    'underscore': 'lib/underscore',
+    'backbone': 'lib/backbone',
+    'backbone.layoutmanager': 'lib/backbone.layoutmanager',
+    'jquery': 'lib/jquery',
+    'bootstrap': 'lib/bootstrap',
+    'bootstrap-tagsinput': 'lib/bootstrap-tagsinput',
+    'datepicker': 'lib/bootstrap-datepicker',
+    'bootbox': 'lib/bootbox',
+    'jquery.validate': 'lib/jquery.validate',
+    'validator': 'lib/jquery.validate.volteneo',
+    'volteneo.date': 'lib/volteneo.date',
+    'chart': 'lib/Chart',
+    'message': 'lib/volteneo-alert-message'
+//    'template': '../template'
+},
+shim: {
+    'backbone': {
+        deps: ['underscore', 'jquery'],
+        exports: 'Backbone'
+    },
+    'underscore': {
+        exports: '_'
+    },
+    'chart': {
+        deps: ['jquery'],
+        exports: 'Chart'
+    },
+    'backbone.layoutmanager': ['backbone'],
+    'bootstrap': ['jquery']
+    // 'validate': ['jquery', 'validate.defaults']
+}

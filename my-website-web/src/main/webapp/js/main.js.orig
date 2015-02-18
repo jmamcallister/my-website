@@ -1,0 +1,36 @@
+require.config({
+	paths: {
+		'text': 'lib/text',
+		'underscore': 'lib/underscore',
+		'backbone': 'lib/backbone',
+		'backbone.layoutmanager': 'lib/backbone.layoutmanager',
+		'jquery': 'lib/jquery',
+		'bootstrap': 'lib/bootstrap',
+		'chart': 'lib/Chart',
+		'message': 'lib/volteneo-alert-message',
+		'template': '../template'
+	},
+
+	shim: {
+		'backbone': {
+			deps: ['underscore', 'jquery'],
+			exports: 'Backbone'
+		},
+		'underscore': {
+			exports: '_'
+		},
+		'chart': {
+			deps: ['jquery'],
+			exports: 'Chart'
+		},
+		'backbone.layoutmanager': ['backbone'],
+		'bootstrap': ['jquery']
+	}
+
+});
+
+require([
+	'app'
+	], function(App){
+		App.initialize();
+});
